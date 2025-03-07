@@ -39,7 +39,10 @@ public class Program {
         System.out.println(newSeller);
 
 
-        System.out.println("");
+        System.out.println("-- update --");
+        newSeller.setBaseSalary(5000);
+        sellerDao.update(newSeller);
+
         System.out.println("");
     }
 }
