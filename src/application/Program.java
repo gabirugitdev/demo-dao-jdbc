@@ -33,6 +33,13 @@ public class Program {
             System.out.println(s);
         }
 
+        System.out.println("-- insert --");
+        Seller newSeller = new Seller(null, "Greg", "Greeg@gmail.com", new Date(), 4000.0, department);
+        sellerDao.insert(newSeller);
+        System.out.println(newSeller);
+
+
+        System.out.println("");
         System.out.println("");
     }
 }
